@@ -22,9 +22,7 @@ export default async function Home() {
 			headers: {
 				"X-CMC_PRO_API_KEY": process.env.API_KEY!,
 			},
-			next: {
-				revalidate: 15,
-			}
+			cache: "no-store"
 		}
 	)
 
